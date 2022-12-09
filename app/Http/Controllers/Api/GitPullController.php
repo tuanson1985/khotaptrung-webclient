@@ -29,10 +29,6 @@ class GitPullController extends Controller
             ], 200);
         }
 
-//        $command_one ='git switch master 2>&1';
-//
-//        $output_one = shell_exec($command_one);
-
         $command ='git pull https://'.$token.'@github.com/tannm2611/khotaptrung-webclient.git '.$brand.' 2>&1';
 
         $output = shell_exec($command);
